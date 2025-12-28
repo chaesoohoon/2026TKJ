@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 THE INTERNATIONAL: STRATEGIC ROADMAP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Pretendard:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #000;
+            color: white;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+            word-break: keep-all;
+            line-height: 1.2;
+        }
+        
+        .font-black-han { font-family: 'Black Han Sans', sans-serif; }
+        
+        /* 시네마틱 슬라이드 리빌 애니메이션 */
+        @keyframes slide-reveal {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .drama-text-pop {
+            animation: slide-reveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+            display: block;
+        }
+
+        .slide-transition {
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .glass-dark {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* 이미지 재현을 위한 타이틀 스타일 */
+        .main-title-text {
+            color: #FF6B00;
+            font-family: 'Black Han Sans', sans-serif;
+            font-size: 11vw;
+            line-height: 0.95;
+            letter-spacing: -0.05em;
+            text-align: center;
+        }
+
+        .layout-guide {
+            position: absolute;
+            left: 5rem;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, rgba(255, 107, 0, 0.2) 20%, rgba(255, 107, 0, 0.2) 80%, transparent);
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        ::-webkit-scrollbar { display: none; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-black">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
